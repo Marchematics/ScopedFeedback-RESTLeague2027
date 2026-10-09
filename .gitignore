@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+output/
+results/
+*.jsonl
+*.log
+*.tar
+*.tar.gz
+*.whl
