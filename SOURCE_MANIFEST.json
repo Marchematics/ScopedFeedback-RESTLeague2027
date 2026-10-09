@@ -1,0 +1,100 @@
+{
+  "baseline_revision": "c3a4d22d5ffff616e5caede58ca6956b9d1ca403",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 62,
+      "sha256": "57345b5df62e9e2a0b879cb17b15a865f6d370922551fa34620665f60d3093fb"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 94,
+      "sha256": "a91936ac56a9bf19c13207a8e37d4acf04f2edb0d855068c49c3fbd301e2e42b"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 278,
+      "sha256": "7a036272c8fc0844642c9a94b38ebc0c0ad4c9720a53f52b4be31bd421d3e721"
+    },
+    {
+      "path": "Dockerfile.restgym",
+      "bytes": 453,
+      "sha256": "fe7227a8dabe52433da264469888ba9c852bf2dcebb9d3771754f163d560198f"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1069,
+      "sha256": "aed1eea0a7cf8186ea2453ebb396258a85fa24ded5ce5cb90b7cd2e96c738915"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5927,
+      "sha256": "538095d1672cd29f24a435f9f622c6ba02bb0d27b54f9cce7b0dffc5fb42a79b"
+    },
+    {
+      "path": "SUBMISSION.md",
+      "bytes": 2268,
+      "sha256": "8a079111e5b05d52640285bcb1cd1d383a856c08cb848baef7f52dc1f35b45a5"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 1240,
+      "sha256": "c9522ddb1eb6fd636aac49e284b7774f6cb0fa1c2f5691b92bbe4cd64e2bf81b"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 14,
+      "sha256": "0969da99a0bc2a1b71ed50584560f4588a37567ac63af3ddbaf3c4617ca5621a"
+    },
+    {
+      "path": "restgym-tool-config.yml",
+      "bytes": 14,
+      "sha256": "58b2e0c9e66599dd94f77b2ab49ca64f0b6841d32f4b0874c4c4b8fd5b9fb862"
+    },
+    {
+      "path": "restleague/__init__.py",
+      "bytes": 101,
+      "sha256": "dd5afb10725526fcb1c4e2a750fced17af066b139e009f618b3e337c825fe126"
+    },
+    {
+      "path": "restleague/__main__.py",
+      "bytes": 1404,
+      "sha256": "3c51ea4e0117ec6aff03b9fed20e04817fc2e61d5369b87f9dd47e1925e80277"
+    },
+    {
+      "path": "restleague/core.py",
+      "bytes": 24595,
+      "sha256": "b8b049f3a347b6cdca091c9f64df871e2fab03a1d96b406ae438fbdba9dd9980"
+    },
+    {
+      "path": "restleague/entrypoint.py",
+      "bytes": 3002,
+      "sha256": "f5df6b67d248908b09a0f9f0fb659d052ff32c38b10c6722722cb05f9ae6125e"
+    },
+    {
+      "path": "tests/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/fixture.py",
+      "bytes": 3449,
+      "sha256": "8301ffbb5df0792b895abd01ed178171730e5d9f8db4cd625d408cde48a14965"
+    },
+    {
+      "path": "tests/test_adapter.py",
+      "bytes": 5360,
+      "sha256": "8bf89b2041eedef4c11bd8b1c48f3dc06080986777f20bc8d9ba41ef33457034"
+    },
+    {
+      "path": "tests/test_core.py",
+      "bytes": 4668,
+      "sha256": "f4f87849e177176351aea3328e98bf55a26225d7c5a53a1a5c2a19f12882e7a9"
+    },
+    {
+      "path": "tests/test_log_integrity.py",
+      "bytes": 5875,
+      "sha256": "a93194998ff84cd56e969dfad4d73e49c665b21705873b3ee9fdfd7f6050b303"
+    }
+  ]
+}
