@@ -1,0 +1,42 @@
+{
+  "PROTOCOL.md": {
+    "bytes": 51581,
+    "sha256": "daa423c9572b4a72d003181a9889f3a3b6a2ed773258d95b5494578aefab878d"
+  },
+  "ROOT_TEST_RUN.txt": {
+    "bytes": 12851,
+    "sha256": "36030c881a2e0d1d962480872def1c280a43f5acb3faa6c32fdc08adc3e9f425"
+  },
+  "ROOT_TRACES.json": {
+    "bytes": 50541,
+    "sha256": "f6d4b550e284c60ff038f7ebff5b1fce397c80166304777fa50ee07805c0b6fe"
+  },
+  "ROOT_TRACE_STDERR.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "fixtures.py": {
+    "bytes": 16391,
+    "sha256": "d7fd55c2288e7cb65e5d29be0f994f6d32c0ab583a02709d1dd8a68a25ef81bc"
+  },
+  "resources.py": {
+    "bytes": 26028,
+    "sha256": "5540266a2be3e21fa95eea9951ab248e65ab203645b99b7ac34b73ad6c4b9d0f"
+  },
+  "scheduler.py": {
+    "bytes": 21914,
+    "sha256": "96d3e1c78b26f1ec04c6fdf4043cf6265ae84fc17af688e5e8c8e7ea964743d3"
+  },
+  "test_integration.py": {
+    "bytes": 13186,
+    "sha256": "a53d7665b9462e06f9510e0387ee2393e57e2c763388fb8610b4afc3a79422e2"
+  },
+  "tests_resources.py": {
+    "bytes": 16133,
+    "sha256": "6edb2fe0a08c6bbcb3c52f0d425dfced9ae90d745bcdb652aba1035aa7b1a8d5"
+  },
+  "tests_scheduler.py": {
+    "bytes": 16845,
+    "sha256": "033206226584e38e880511b5992f0e9182a6baba37fcfc86ae1da978fa0beda8"
+  }
+}

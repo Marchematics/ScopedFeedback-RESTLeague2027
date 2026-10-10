@@ -1,0 +1,2072 @@
+{
+  "hand_policy_trace_consuming": [
+    {
+      "async_completion": false,
+      "body": {
+        "id": "7",
+        "items": 0,
+        "observed_at": 1
+      },
+      "completed": true,
+      "event_id": "event-1",
+      "generation": 0,
+      "if_match": null,
+      "limit": 1,
+      "number": 1,
+      "operation": "C",
+      "parent": "A",
+      "resource_id": "7",
+      "role": "hand_policy_trace",
+      "status": 201,
+      "version": "\"v1\""
+    },
+    {
+      "async_completion": false,
+      "body": {
+        "error": "empty",
+        "observed_at": 2
+      },
+      "completed": false,
+      "event_id": null,
+      "generation": 0,
+      "if_match": null,
+      "limit": 1,
+      "number": 2,
+      "operation": "T",
+      "parent": "A",
+      "resource_id": "7",
+      "role": "hand_policy_trace",
+      "status": 409,
+      "version": "\"v1\""
+    },
+    {
+      "async_completion": false,
+      "body": {
+        "id": "7",
+        "observed_at": 3
+      },
+      "completed": true,
+      "event_id": "event-2",
+      "generation": 0,
+      "if_match": null,
+      "limit": 1,
+      "number": 3,
+      "operation": "U",
+      "parent": "A",
+      "resource_id": "7",
+      "role": "hand_policy_trace",
+      "status": 200,
+      "version": "\"v2\""
+    },
+    {
+      "async_completion": false,
+      "body": {
+        "items_returned": 1,
+        "observed_at": 4
+      },
+      "completed": true,
+      "event_id": "event-3",
+      "generation": 0,
+      "if_match": null,
+      "limit": 1,
+      "number": 4,
+      "operation": "T",
+      "parent": "A",
+      "resource_id": "7",
+      "role": "hand_policy_trace",
+      "status": 200,
+      "version": "\"v3\""
+    },
+    {
+      "async_completion": false,
+      "body": {
+        "id": "8",
+        "items": 0,
+        "observed_at": 5
+      },
+      "completed": true,
+      "event_id": "event-4",
+      "generation": 0,
+      "if_match": null,
+      "limit": 1,
+      "number": 5,
+      "operation": "C",
+      "parent": "A",
+      "resource_id": "8",
+      "role": "hand_policy_trace",
+      "status": 201,
+      "version": "\"v1\""
+    },
+    {
+      "async_completion": false,
+      "body": {
+        "id": "8",
+        "observed_at": 6
+      },
+      "completed": true,
+      "event_id": "event-5",
+      "generation": 0,
+      "if_match": null,
+      "limit": 1,
+      "number": 6,
+      "operation": "U",
+      "parent": "A",
+      "resource_id": "8",
+      "role": "hand_policy_trace",
+      "status": 200,
+      "version": "\"v2\""
+    },
+    {
+      "async_completion": false,
+      "body": {
+        "error": "items exceed limit",
+        "observed_at": 7
+      },
+      "completed": false,
+      "event_id": null,
+      "generation": 0,
+      "if_match": null,
+      "limit": 0,
+      "number": 7,
+      "operation": "T",
+      "parent": "A",
+      "resource_id": "8",
+      "role": "hand_policy_trace",
+      "status": 422,
+      "version": "\"v2\""
+    },
+    {
+      "async_completion": false,
+      "body": {
+        "observed_at": 8
+      },
+      "completed": true,
+      "event_id": "event-6",
+      "generation": 0,
+      "if_match": null,
+      "limit": 1,
+      "number": 8,
+      "operation": "D",
+      "parent": "A",
+      "resource_id": "8",
+      "role": "hand_policy_trace",
+      "status": 204,
+      "version": null
+    }
+  ],
+  "hand_policy_trace_nonconsuming": [
+    {
+      "async_completion": false,
+      "body": {
+        "id": "7",
+        "items": 0,
+        "observed_at": 1
+      },
+      "completed": true,
+      "event_id": "event-1",
+      "generation": 0,
+      "if_match": null,
+      "limit": 1,
+      "number": 1,
+      "operation": "C",
+      "parent": "A",
+      "resource_id": "7",
+      "role": "hand_policy_trace",
+      "status": 201,
+      "version": "\"v1\""
+    },
+    {
+      "async_completion": false,
+      "body": {
+        "error": "empty",
+        "observed_at": 2
+      },
+      "completed": false,
+      "event_id": null,
+      "generation": 0,
+      "if_match": null,
+      "limit": 1,
+      "number": 2,
+      "operation": "T",
+      "parent": "A",
+      "resource_id": "7",
+      "role": "hand_policy_trace",
+      "status": 409,
+      "version": "\"v1\""
+    },
+    {
+      "async_completion": false,
+      "body": {
+        "id": "7",
+        "observed_at": 3
+      },
+      "completed": true,
+      "event_id": "event-2",
+      "generation": 0,
+      "if_match": null,
+      "limit": 1,
+      "number": 3,
+      "operation": "U",
+      "parent": "A",
+      "resource_id": "7",
+      "role": "hand_policy_trace",
+      "status": 200,
+      "version": "\"v2\""
+    },
+    {
+      "async_completion": false,
+      "body": {
+        "items_returned": 1,
+        "observed_at": 4
+      },
+      "completed": false,
+      "event_id": null,
+      "generation": 0,
+      "if_match": null,
+      "limit": 1,
+      "number": 4,
+      "operation": "T",
+      "parent": "A",
+      "resource_id": "7",
+      "role": "hand_policy_trace",
+      "status": 200,
+      "version": "\"v2\""
+    },
+    {
+      "async_completion": false,
+      "body": {
+        "error": "items exceed limit",
+        "observed_at": 5
+      },
+      "completed": false,
+      "event_id": null,
+      "generation": 0,
+      "if_match": null,
+      "limit": 0,
+      "number": 5,
+      "operation": "T",
+      "parent": "A",
+      "resource_id": "7",
+      "role": "hand_policy_trace",
+      "status": 422,
+      "version": "\"v2\""
+    },
+    {
+      "async_completion": false,
+      "body": {
+        "observed_at": 6
+      },
+      "completed": true,
+      "event_id": "event-3",
+      "generation": 0,
+      "if_match": null,
+      "limit": 1,
+      "number": 6,
+      "operation": "D",
+      "parent": "A",
+      "resource_id": "7",
+      "role": "hand_policy_trace",
+      "status": 204,
+      "version": null
+    }
+  ],
+  "label": "synthetic in-process mechanism traces; no official evaluator claims",
+  "real_integration": [
+    {
+      "baseline_turns": 6,
+      "budget_spent": 6,
+      "consuming": false,
+      "fixture": "state_validation",
+      "mode": "A",
+      "physical_requests": 6,
+      "rejected_feedback": [],
+      "request_cap": 6,
+      "state_validation_seen": false,
+      "synthetic_fault_seen": false,
+      "trace": [
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "items": 0,
+            "observed_at": 1
+          },
+          "completed": true,
+          "event_id": "event-1",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 1,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 2
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 2,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "observed_at": 3
+          },
+          "completed": true,
+          "event_id": "event-2",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 3,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "observed_at": 4
+          },
+          "completed": true,
+          "event_id": "event-3",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 4,
+          "operation": "D",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 204,
+          "version": null
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "items": 0,
+            "observed_at": 5
+          },
+          "completed": true,
+          "event_id": "event-4",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 5,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 6
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 6,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        }
+      ]
+    },
+    {
+      "baseline_turns": 5,
+      "budget_spent": 6,
+      "consuming": false,
+      "fixture": "state_validation",
+      "mode": "B",
+      "physical_requests": 6,
+      "rejected_feedback": [],
+      "request_cap": 6,
+      "state_validation_seen": false,
+      "synthetic_fault_seen": false,
+      "trace": [
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "items": 0,
+            "observed_at": 1
+          },
+          "completed": true,
+          "event_id": "event-1",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 1,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 2
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 2,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "observed_at": 3
+          },
+          "completed": true,
+          "event_id": "event-2",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 3,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "items_returned": 1,
+            "observed_at": 4
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 4,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "revisit",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "observed_at": 5
+          },
+          "completed": true,
+          "event_id": "event-3",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 5,
+          "operation": "D",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 204,
+          "version": null
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "items": 0,
+            "observed_at": 6
+          },
+          "completed": true,
+          "event_id": "event-4",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 6,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        }
+      ]
+    },
+    {
+      "baseline_turns": 5,
+      "budget_spent": 6,
+      "consuming": false,
+      "fixture": "state_validation",
+      "mode": "C",
+      "physical_requests": 6,
+      "rejected_feedback": [
+        {
+          "kind": "variant",
+          "reason": "insufficient cap for the complete feedback recipe"
+        }
+      ],
+      "request_cap": 6,
+      "state_validation_seen": false,
+      "synthetic_fault_seen": false,
+      "trace": [
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "items": 0,
+            "observed_at": 1
+          },
+          "completed": true,
+          "event_id": "event-1",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 1,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 2
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 2,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "observed_at": 3
+          },
+          "completed": true,
+          "event_id": "event-2",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 3,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "items_returned": 1,
+            "observed_at": 4
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 4,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "revisit",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "observed_at": 5
+          },
+          "completed": true,
+          "event_id": "event-3",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 5,
+          "operation": "D",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 204,
+          "version": null
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "items": 0,
+            "observed_at": 6
+          },
+          "completed": true,
+          "event_id": "event-4",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 6,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        }
+      ]
+    },
+    {
+      "baseline_turns": 8,
+      "budget_spent": 8,
+      "consuming": false,
+      "fixture": "state_validation",
+      "mode": "A",
+      "physical_requests": 8,
+      "rejected_feedback": [],
+      "request_cap": 8,
+      "state_validation_seen": false,
+      "synthetic_fault_seen": false,
+      "trace": [
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "items": 0,
+            "observed_at": 1
+          },
+          "completed": true,
+          "event_id": "event-1",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 1,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 2
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 2,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "observed_at": 3
+          },
+          "completed": true,
+          "event_id": "event-2",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 3,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "observed_at": 4
+          },
+          "completed": true,
+          "event_id": "event-3",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 4,
+          "operation": "D",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 204,
+          "version": null
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "items": 0,
+            "observed_at": 5
+          },
+          "completed": true,
+          "event_id": "event-4",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 5,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 6
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 6,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "observed_at": 7
+          },
+          "completed": true,
+          "event_id": "event-5",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 7,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "observed_at": 8
+          },
+          "completed": true,
+          "event_id": "event-6",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 8,
+          "operation": "D",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 204,
+          "version": null
+        }
+      ]
+    },
+    {
+      "baseline_turns": 7,
+      "budget_spent": 8,
+      "consuming": false,
+      "fixture": "state_validation",
+      "mode": "B",
+      "physical_requests": 8,
+      "rejected_feedback": [
+        {
+          "kind": "revisit",
+          "reason": "insufficient cap for the complete feedback recipe"
+        }
+      ],
+      "request_cap": 8,
+      "state_validation_seen": false,
+      "synthetic_fault_seen": false,
+      "trace": [
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "items": 0,
+            "observed_at": 1
+          },
+          "completed": true,
+          "event_id": "event-1",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 1,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 2
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 2,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "observed_at": 3
+          },
+          "completed": true,
+          "event_id": "event-2",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 3,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "items_returned": 1,
+            "observed_at": 4
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 4,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "revisit",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "observed_at": 5
+          },
+          "completed": true,
+          "event_id": "event-3",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 5,
+          "operation": "D",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 204,
+          "version": null
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "items": 0,
+            "observed_at": 6
+          },
+          "completed": true,
+          "event_id": "event-4",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 6,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 7
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 7,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "observed_at": 8
+          },
+          "completed": true,
+          "event_id": "event-5",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 8,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        }
+      ]
+    },
+    {
+      "baseline_turns": 4,
+      "budget_spent": 8,
+      "consuming": false,
+      "fixture": "state_validation",
+      "mode": "C",
+      "physical_requests": 8,
+      "rejected_feedback": [],
+      "request_cap": 8,
+      "state_validation_seen": true,
+      "synthetic_fault_seen": false,
+      "trace": [
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "items": 0,
+            "observed_at": 1
+          },
+          "completed": true,
+          "event_id": "event-1",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 1,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 2
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 2,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "observed_at": 3
+          },
+          "completed": true,
+          "event_id": "event-2",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 3,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "items_returned": 1,
+            "observed_at": 4
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 4,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "revisit",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "observed_at": 5
+          },
+          "completed": true,
+          "event_id": "event-3",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 5,
+          "operation": "D",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 204,
+          "version": null
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "items": 0,
+            "observed_at": 6
+          },
+          "completed": true,
+          "event_id": "event-4",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 6,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "prefix",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "observed_at": 7
+          },
+          "completed": true,
+          "event_id": "event-5",
+          "generation": 0,
+          "if_match": "\"v1\"",
+          "limit": 1,
+          "number": 7,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "prefix",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "items exceed limit",
+            "observed_at": 8
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": "\"v2\"",
+          "limit": 0,
+          "number": 8,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "variant",
+          "status": 422,
+          "version": "\"v2\""
+        }
+      ]
+    }
+  ],
+  "separate_planted_fault_integration": [
+    {
+      "baseline_turns": 6,
+      "budget_spent": 6,
+      "consuming": false,
+      "fixture": "synthetic_fault",
+      "mode": "A",
+      "physical_requests": 6,
+      "rejected_feedback": [],
+      "request_cap": 6,
+      "state_validation_seen": false,
+      "synthetic_fault_seen": false,
+      "trace": [
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "items": 0,
+            "observed_at": 1
+          },
+          "completed": true,
+          "event_id": "event-1",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 1,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 2
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 2,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "observed_at": 3
+          },
+          "completed": true,
+          "event_id": "event-2",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 3,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "observed_at": 4
+          },
+          "completed": true,
+          "event_id": "event-3",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 4,
+          "operation": "D",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 204,
+          "version": null
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "items": 0,
+            "observed_at": 5
+          },
+          "completed": true,
+          "event_id": "event-4",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 5,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 6
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 6,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        }
+      ]
+    },
+    {
+      "baseline_turns": 5,
+      "budget_spent": 6,
+      "consuming": false,
+      "fixture": "synthetic_fault",
+      "mode": "B",
+      "physical_requests": 6,
+      "rejected_feedback": [],
+      "request_cap": 6,
+      "state_validation_seen": false,
+      "synthetic_fault_seen": false,
+      "trace": [
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "items": 0,
+            "observed_at": 1
+          },
+          "completed": true,
+          "event_id": "event-1",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 1,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 2
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 2,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "observed_at": 3
+          },
+          "completed": true,
+          "event_id": "event-2",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 3,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "items_returned": 1,
+            "observed_at": 4
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 4,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "revisit",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "observed_at": 5
+          },
+          "completed": true,
+          "event_id": "event-3",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 5,
+          "operation": "D",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 204,
+          "version": null
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "items": 0,
+            "observed_at": 6
+          },
+          "completed": true,
+          "event_id": "event-4",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 6,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        }
+      ]
+    },
+    {
+      "baseline_turns": 5,
+      "budget_spent": 6,
+      "consuming": false,
+      "fixture": "synthetic_fault",
+      "mode": "C",
+      "physical_requests": 6,
+      "rejected_feedback": [
+        {
+          "kind": "variant",
+          "reason": "insufficient cap for the complete feedback recipe"
+        }
+      ],
+      "request_cap": 6,
+      "state_validation_seen": false,
+      "synthetic_fault_seen": false,
+      "trace": [
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "items": 0,
+            "observed_at": 1
+          },
+          "completed": true,
+          "event_id": "event-1",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 1,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 2
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 2,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "observed_at": 3
+          },
+          "completed": true,
+          "event_id": "event-2",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 3,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "items_returned": 1,
+            "observed_at": 4
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 4,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "revisit",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "observed_at": 5
+          },
+          "completed": true,
+          "event_id": "event-3",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 5,
+          "operation": "D",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 204,
+          "version": null
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "items": 0,
+            "observed_at": 6
+          },
+          "completed": true,
+          "event_id": "event-4",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 6,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        }
+      ]
+    },
+    {
+      "baseline_turns": 8,
+      "budget_spent": 8,
+      "consuming": false,
+      "fixture": "synthetic_fault",
+      "mode": "A",
+      "physical_requests": 8,
+      "rejected_feedback": [],
+      "request_cap": 8,
+      "state_validation_seen": false,
+      "synthetic_fault_seen": false,
+      "trace": [
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "items": 0,
+            "observed_at": 1
+          },
+          "completed": true,
+          "event_id": "event-1",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 1,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 2
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 2,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "observed_at": 3
+          },
+          "completed": true,
+          "event_id": "event-2",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 3,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "observed_at": 4
+          },
+          "completed": true,
+          "event_id": "event-3",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 4,
+          "operation": "D",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 204,
+          "version": null
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "items": 0,
+            "observed_at": 5
+          },
+          "completed": true,
+          "event_id": "event-4",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 5,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 6
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 6,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "observed_at": 7
+          },
+          "completed": true,
+          "event_id": "event-5",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 7,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "observed_at": 8
+          },
+          "completed": true,
+          "event_id": "event-6",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 8,
+          "operation": "D",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 204,
+          "version": null
+        }
+      ]
+    },
+    {
+      "baseline_turns": 7,
+      "budget_spent": 8,
+      "consuming": false,
+      "fixture": "synthetic_fault",
+      "mode": "B",
+      "physical_requests": 8,
+      "rejected_feedback": [
+        {
+          "kind": "revisit",
+          "reason": "insufficient cap for the complete feedback recipe"
+        }
+      ],
+      "request_cap": 8,
+      "state_validation_seen": false,
+      "synthetic_fault_seen": false,
+      "trace": [
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "items": 0,
+            "observed_at": 1
+          },
+          "completed": true,
+          "event_id": "event-1",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 1,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 2
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 2,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "observed_at": 3
+          },
+          "completed": true,
+          "event_id": "event-2",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 3,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "items_returned": 1,
+            "observed_at": 4
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 4,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "revisit",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "observed_at": 5
+          },
+          "completed": true,
+          "event_id": "event-3",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 5,
+          "operation": "D",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 204,
+          "version": null
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "items": 0,
+            "observed_at": 6
+          },
+          "completed": true,
+          "event_id": "event-4",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 6,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 7
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 7,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "observed_at": 8
+          },
+          "completed": true,
+          "event_id": "event-5",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 8,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        }
+      ]
+    },
+    {
+      "baseline_turns": 4,
+      "budget_spent": 8,
+      "consuming": false,
+      "fixture": "synthetic_fault",
+      "mode": "C",
+      "physical_requests": 8,
+      "rejected_feedback": [],
+      "request_cap": 8,
+      "state_validation_seen": false,
+      "synthetic_fault_seen": true,
+      "trace": [
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "items": 0,
+            "observed_at": 1
+          },
+          "completed": true,
+          "event_id": "event-1",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 1,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "empty",
+            "observed_at": 2
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 2,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 409,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "7",
+            "observed_at": 3
+          },
+          "completed": true,
+          "event_id": "event-2",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 3,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "items_returned": 1,
+            "observed_at": 4
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 4,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "revisit",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "observed_at": 5
+          },
+          "completed": true,
+          "event_id": "event-3",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 5,
+          "operation": "D",
+          "parent": "A",
+          "resource_id": "7",
+          "role": "baseline",
+          "status": 204,
+          "version": null
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "items": 0,
+            "observed_at": 6
+          },
+          "completed": true,
+          "event_id": "event-4",
+          "generation": 0,
+          "if_match": null,
+          "limit": 1,
+          "number": 6,
+          "operation": "C",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "prefix",
+          "status": 201,
+          "version": "\"v1\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "id": "8",
+            "observed_at": 7
+          },
+          "completed": true,
+          "event_id": "event-5",
+          "generation": 0,
+          "if_match": "\"v1\"",
+          "limit": 1,
+          "number": 7,
+          "operation": "U",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "prefix",
+          "status": 200,
+          "version": "\"v2\""
+        },
+        {
+          "async_completion": false,
+          "body": {
+            "error": "synthetic local-variant fault",
+            "observed_at": 8
+          },
+          "completed": false,
+          "event_id": null,
+          "generation": 0,
+          "if_match": "\"v2\"",
+          "limit": 2,
+          "number": 8,
+          "operation": "T",
+          "parent": "A",
+          "resource_id": "8",
+          "role": "variant",
+          "status": 500,
+          "version": "\"v2\""
+        }
+      ]
+    }
+  ]
+}
