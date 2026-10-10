@@ -1,0 +1,458 @@
+{
+  "status": "frozen_candidate_mechanism_only",
+  "algorithm": [
+    "At most one atomic job per completed baseline turn",
+    "Maximum six physical requests: one revisit, zero to four constructive-prefix requests, at most one local variant",
+    "Reserve the full recipe before any feedback dispatch; no downgrade when it is unaffordable",
+    "Reuse requires declared read-only contract provenance and unchanged observed exact identity, revision, and validator",
+    "Consuming or unknown effects require a charged constructive replay; unexpected read-only evidence changes abort the variant",
+    "All physical requests use the unchanged v1 Budget; no recursive variants, hidden reads, or free state restoration"
+  ],
+  "interpretation": "Atomic2 is a bounded candidate that finishes up to two feedback requests before resuming baseline. The six-request trace shows a sufficient condition for benefit, not evidence of real-API improvement or SOTA.",
+  "negative_control": "At consuming cap6, slot1 obtains one successful target while atomic2 obtains zero because the complete rebuild recipe is unaffordable. Neither reaches 422. This is a loss in successful-target progress, not a claimed fault-discovery loss.",
+  "test_summary": {
+    "tests": 26,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "cpu_seconds": 0.017896032999999992,
+    "wall_seconds": 0.017895976998261176
+  },
+  "source_sha256": {
+    "atomic_feedback.py": "9544e4b4d229cc8d9c30077ed674cc6f0d555984ca6867253fc82d443fb72746",
+    "tests_atomic_feedback.py": "d2765d2c95e84cdf8491d9789afd8612fe1574ceb46d9760f73961c319df765a"
+  },
+  "v1_source_sha256_verified_unchanged": {
+    "fixtures.py": "d7fd55c2288e7cb65e5d29be0f994f6d32c0ab583a02709d1dd8a68a25ef81bc",
+    "test_integration.py": "a53d7665b9462e06f9510e0387ee2393e57e2c763388fb8610b4afc3a79422e2",
+    "resources.py": "5540266a2be3e21fa95eea9951ab248e65ab203645b99b7ac34b73ad6c4b9d0f",
+    "tests_resources.py": "6edb2fe0a08c6bbcb3c52f0d425dfced9ae90d745bcdb652aba1035aa7b1a8d5",
+    "scheduler.py": "96d3e1c78b26f1ec04c6fdf4043cf6265ae84fc17af688e5e8c8e7ea964743d3",
+    "tests_scheduler.py": "033206226584e38e880511b5992f0e9182a6baba37fcfc86ae1da978fa0beda8"
+  },
+  "cases": [
+    {
+      "case": "live_reuse_cap6",
+      "slot1": {
+        "policy": "slot1",
+        "cap": 6,
+        "consuming": false,
+        "physical_requests": 6,
+        "budget_spent": 6,
+        "baseline_turns": 5,
+        "state_validation_seen": false,
+        "successful_targets": 1,
+        "refused": [
+          "complete_recipe_budget_refused"
+        ],
+        "trace": [
+          {
+            "operation": "C",
+            "limit": 1,
+            "role": "baseline",
+            "status": 201,
+            "id": "7",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "T",
+            "limit": 1,
+            "role": "baseline",
+            "status": 409,
+            "id": "7",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "U",
+            "limit": 1,
+            "role": "baseline",
+            "status": 200,
+            "id": "7",
+            "version": "\"v2\""
+          },
+          {
+            "operation": "T",
+            "limit": 1,
+            "role": "revisit",
+            "status": 200,
+            "id": "7",
+            "version": "\"v2\""
+          },
+          {
+            "operation": "D",
+            "limit": 1,
+            "role": "baseline",
+            "status": 204,
+            "id": "7",
+            "version": null
+          },
+          {
+            "operation": "C",
+            "limit": 1,
+            "role": "baseline",
+            "status": 201,
+            "id": "8",
+            "version": "\"v1\""
+          }
+        ]
+      },
+      "atomic2": {
+        "policy": "atomic2",
+        "cap": 6,
+        "consuming": false,
+        "physical_requests": 6,
+        "budget_spent": 6,
+        "baseline_turns": 4,
+        "state_validation_seen": true,
+        "successful_targets": 1,
+        "refused": [],
+        "trace": [
+          {
+            "operation": "C",
+            "limit": 1,
+            "role": "baseline",
+            "status": 201,
+            "id": "7",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "T",
+            "limit": 1,
+            "role": "baseline",
+            "status": 409,
+            "id": "7",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "U",
+            "limit": 1,
+            "role": "baseline",
+            "status": 200,
+            "id": "7",
+            "version": "\"v2\""
+          },
+          {
+            "operation": "T",
+            "limit": 1,
+            "role": "revisit",
+            "status": 200,
+            "id": "7",
+            "version": "\"v2\""
+          },
+          {
+            "operation": "T",
+            "limit": 0,
+            "role": "variant",
+            "status": 422,
+            "id": "7",
+            "version": "\"v2\""
+          },
+          {
+            "operation": "D",
+            "limit": 1,
+            "role": "baseline",
+            "status": 204,
+            "id": "7",
+            "version": null
+          }
+        ]
+      }
+    },
+    {
+      "case": "charged_rebuild_cap8",
+      "slot1": {
+        "policy": "slot1",
+        "cap": 8,
+        "consuming": true,
+        "physical_requests": 8,
+        "budget_spent": 8,
+        "baseline_turns": 4,
+        "state_validation_seen": true,
+        "successful_targets": 1,
+        "refused": [],
+        "trace": [
+          {
+            "operation": "C",
+            "limit": 1,
+            "role": "baseline",
+            "status": 201,
+            "id": "7",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "T",
+            "limit": 1,
+            "role": "baseline",
+            "status": 409,
+            "id": "7",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "U",
+            "limit": 1,
+            "role": "baseline",
+            "status": 200,
+            "id": "7",
+            "version": "\"v2\""
+          },
+          {
+            "operation": "T",
+            "limit": 1,
+            "role": "revisit",
+            "status": 200,
+            "id": "7",
+            "version": "\"v3\""
+          },
+          {
+            "operation": "D",
+            "limit": 1,
+            "role": "baseline",
+            "status": 204,
+            "id": "7",
+            "version": null
+          },
+          {
+            "operation": "C",
+            "limit": 1,
+            "role": "prefix",
+            "status": 201,
+            "id": "8",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "U",
+            "limit": 1,
+            "role": "prefix",
+            "status": 200,
+            "id": "8",
+            "version": "\"v2\""
+          },
+          {
+            "operation": "T",
+            "limit": 0,
+            "role": "variant",
+            "status": 422,
+            "id": "8",
+            "version": "\"v2\""
+          }
+        ]
+      },
+      "atomic2": {
+        "policy": "atomic2",
+        "cap": 8,
+        "consuming": true,
+        "physical_requests": 8,
+        "budget_spent": 8,
+        "baseline_turns": 4,
+        "state_validation_seen": true,
+        "successful_targets": 1,
+        "refused": [],
+        "trace": [
+          {
+            "operation": "C",
+            "limit": 1,
+            "role": "baseline",
+            "status": 201,
+            "id": "7",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "T",
+            "limit": 1,
+            "role": "baseline",
+            "status": 409,
+            "id": "7",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "U",
+            "limit": 1,
+            "role": "baseline",
+            "status": 200,
+            "id": "7",
+            "version": "\"v2\""
+          },
+          {
+            "operation": "T",
+            "limit": 1,
+            "role": "revisit",
+            "status": 200,
+            "id": "7",
+            "version": "\"v3\""
+          },
+          {
+            "operation": "C",
+            "limit": 1,
+            "role": "prefix",
+            "status": 201,
+            "id": "8",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "U",
+            "limit": 1,
+            "role": "prefix",
+            "status": 200,
+            "id": "8",
+            "version": "\"v2\""
+          },
+          {
+            "operation": "T",
+            "limit": 0,
+            "role": "variant",
+            "status": 422,
+            "id": "8",
+            "version": "\"v2\""
+          },
+          {
+            "operation": "D",
+            "limit": 1,
+            "role": "baseline",
+            "status": 204,
+            "id": "8",
+            "version": null
+          }
+        ]
+      }
+    },
+    {
+      "case": "costly_rebuild_loss_cap6",
+      "slot1": {
+        "policy": "slot1",
+        "cap": 6,
+        "consuming": true,
+        "physical_requests": 6,
+        "budget_spent": 6,
+        "baseline_turns": 5,
+        "state_validation_seen": false,
+        "successful_targets": 1,
+        "refused": [
+          "complete_recipe_budget_refused"
+        ],
+        "trace": [
+          {
+            "operation": "C",
+            "limit": 1,
+            "role": "baseline",
+            "status": 201,
+            "id": "7",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "T",
+            "limit": 1,
+            "role": "baseline",
+            "status": 409,
+            "id": "7",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "U",
+            "limit": 1,
+            "role": "baseline",
+            "status": 200,
+            "id": "7",
+            "version": "\"v2\""
+          },
+          {
+            "operation": "T",
+            "limit": 1,
+            "role": "revisit",
+            "status": 200,
+            "id": "7",
+            "version": "\"v3\""
+          },
+          {
+            "operation": "D",
+            "limit": 1,
+            "role": "baseline",
+            "status": 204,
+            "id": "7",
+            "version": null
+          },
+          {
+            "operation": "C",
+            "limit": 1,
+            "role": "baseline",
+            "status": 201,
+            "id": "8",
+            "version": "\"v1\""
+          }
+        ]
+      },
+      "atomic2": {
+        "policy": "atomic2",
+        "cap": 6,
+        "consuming": true,
+        "physical_requests": 6,
+        "budget_spent": 6,
+        "baseline_turns": 6,
+        "state_validation_seen": false,
+        "successful_targets": 0,
+        "refused": [
+          "complete_recipe_budget_refused",
+          "revisit_binding_not_live_ready"
+        ],
+        "trace": [
+          {
+            "operation": "C",
+            "limit": 1,
+            "role": "baseline",
+            "status": 201,
+            "id": "7",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "T",
+            "limit": 1,
+            "role": "baseline",
+            "status": 409,
+            "id": "7",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "U",
+            "limit": 1,
+            "role": "baseline",
+            "status": 200,
+            "id": "7",
+            "version": "\"v2\""
+          },
+          {
+            "operation": "D",
+            "limit": 1,
+            "role": "baseline",
+            "status": 204,
+            "id": "7",
+            "version": null
+          },
+          {
+            "operation": "C",
+            "limit": 1,
+            "role": "baseline",
+            "status": 201,
+            "id": "8",
+            "version": "\"v1\""
+          },
+          {
+            "operation": "T",
+            "limit": 1,
+            "role": "baseline",
+            "status": 409,
+            "id": "8",
+            "version": "\"v1\""
+          }
+        ]
+      }
+    }
+  ],
+  "failure_conditions": [
+    "Wrong or unavailable read-only contract evidence prevents safe reuse",
+    "Server-side concurrent changes can invalidate validators: atomicity is client scheduling only",
+    "Full-recipe admission may reject a useful standalone revisit under tight budgets",
+    "Unproven, failed, pending, cross-scope or overlong prefixes abort or refuse",
+    "Extra feedback delays baseline operations and may be unhelpful when no transient ready state exists",
+    "Transport adapters must actually honor validators and individually budget all physical retries"
+  ],
+  "next_investment_gate": "Investigate whether real operations expose short-lived usable states before investing in a further method iteration."
+}
