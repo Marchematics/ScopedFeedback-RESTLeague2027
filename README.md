@@ -1,5 +1,13 @@
 # ScopedFeedback
 
+## Complete plan-v3 package
+
+The source on `main` is the historical baseline; the baseline documentation below is retained. For the complete plan-v3 source, Dockerfiles, installation instructions, tests, and offline PyYAML wheel, download the explicitly uploaded [ScopedFeedback-plan-v3-release-ready.zip](https://github.com/Marchematics/ScopedFeedback-RESTLeague2027/releases/download/v0.3.0-plan-v3-artifact/ScopedFeedback-plan-v3-release-ready.zip) (840,260 bytes) from the [plan-v3 artifact release](https://github.com/Marchematics/ScopedFeedback-RESTLeague2027/releases/tag/v0.3.0-plan-v3-artifact).
+
+Expected SHA-256: `24e5c73753671094ac68a1be6f8e6bcc774a7b43b4897e36467fea07f8b61940`
+
+GitHub's automatically generated **Source code (zip)** and **Source code (tar.gz)** archives for that tag contain the historical baseline, not the complete plan-v3 package. Use the uploaded ZIP linked above.
+
 CPU-only black-box REST API test generation for REST League 2027.
 
 Author: **Jiahao Zhang**, Zhengzhou University of Aeronautics.
